@@ -1,0 +1,46 @@
+/*This file is to style the html file*/
+
+body {
+    background-color: #FCA6C9;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+header h1:hover {
+    color: black;
+}
+
+.list {
+    display: table;
+    color: black;
+    list-style-position: inside;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.list li{
+    padding: 5px 0;
+}
+
+.main-image {
+    display: block;
+    width: 12%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.message {
+    text-align: center;
+}
+
+.main-message {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0 40%;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
