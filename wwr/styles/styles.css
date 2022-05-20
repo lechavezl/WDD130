@@ -13,6 +13,10 @@ nav a {
     text-align: center;
 }
 
+#hero-img {
+    width: 100%;
+}
+
 .buttom-box {
     text-align: center;
 }
