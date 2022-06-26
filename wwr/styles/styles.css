@@ -237,19 +237,24 @@ main section img {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin: 150px 100px 150px 100px;
     gap: 200px;
+    background-color: #08253F;
+    padding: 50px;
 }
 
 .camping-place-header {
     text-align: center;
+    color: #FFFFFF;
 }
 
 .camping-place-paragraph {
     text-align: center;
+    color: #FFFFFF;
+}
+
+.camping-place-img {
+    box-shadow: 5px 5px 10px #6F7364
 }
 
 .rivers-place h2 {
@@ -289,13 +294,11 @@ main section img {
 }
 
 .river-img {
-    /* border: 10px solid #4E9DB1; */
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6F7364
 }
 
 .river-img:hover {
-    /* opacity: .6; */
     transform: scale(1.1);
 }
 
