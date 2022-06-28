@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Tuned</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/logo_gamepro_1.jpg" alt="GamePro Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="esports.html">eSports</a>
+                <a href="stay_tuned.html">Stay Tuned</a>
+            </nav>
+        </header>
+        <main class="home-grid">
+            <h1 class="stay-tuned-header">Keep up to date with the latest information</h1>
+            <div class="text-and-image-1">
+                <p class="first-paragraph">How can you stay on top of the latest information? Let us tell you how, here at GamePro. But one thing you may be wondering is how will I know when they have new information? That's a great question, and we have the answer you need. If you want to, you can join our blog, so you'll receive an email notification every time we have a new update. This way, you will not miss critical information about the world of video games. Thus, you will be aware of everything you want to know about new releases, eSports, guides, tips and much more.</p>
+                <img class="stay-tuned-img-1" src="images/stay_tuned_1.jpg" alt="Person using his cellphone">
+            </div>
+            <div class="text-and-img-2">
+                <h2 class="stay-tuned-second-header">Let the world know that video games are a part of you</h2>
+                <p class="second-paragraph">If you want to create your own blog to show the world that you are a true video game fan, we can help you. Be part of our blog, and you'll find the latest news, results, releases, and more impactful information to attract the masses to your website.</p>
+                <img class="stay-tuned-img-2" src="images/stay_tuned_2.jpg" alt="Boy playing virtual reality video games">
+            </div>
+            <h2>Suscribe our blog</h2>
+            <div class="suscribe-box-grid">
+                <div id="feedback"></div>
+                <form action="/suscribe-to-gamepro" method="post">
+                    <ul>
+                     <li>
+                       <label for="name">Fist Name:</label>
+                       <input type="text" id="first-name" name="user_name">
+                     </li>
+                     <li>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="user_last_name">
+                      </li>
+                     <li>
+                       <label for="mail">Email Adress:</label>
+                       <input type="email" id="mail" name="user_email">
+                     </li>
+                     <li>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="user_phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required>
+                        <small>Format: 123-456-7890</small>
+                     </li>
+                     <li>
+                        <input type="checkbox" id="notifications" name="user_agreedment">
+                        <label for="notifications">Do you want to receive notifications when we have new posts?</label>
+                     </li>
+                     <li class="button">
+                        <button type="submit">Suscribe Now</button>
+                      </li>
+                    </ul>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <h3>GamePro &copy; 2022</h3>
+            <h3><a href="site-plan.html">Site Plan</a></h3>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="facebook icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for subscribing to our blog. We will let you know every time we have a new publication!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
