@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap');
+/* Home Page Styles */
+
+#content {
+    max-width: 1600px;
+}
+
+/* Set the scrollbar width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Create the shape of the scrollbar progress bar */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Create the scrollbar color and shape */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+}
+
+/* Create the hover of the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+#banner {
+    text-align: center;
+}
+
+#banner-img {
+    width: 100%
+}
+
+body {
+    background-color: #272727;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 190px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #FEB729;
+    color: black;
+    padding: 18px 45px 18px 45px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: gray;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 17px;
+}
+
+h1, h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.3em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.header-introduction {
+    grid-column: 2/6;
+    grid-row: 1/2;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.introduction-text {
+    grid-column: 2/6;
+    grid-row: 3/6;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(73, 73, 73);
+}
+
+.introduction-img {
+    grid-column: 7/11;
+    grid-row: 3/6;
+    width: 400px;
+    height: 330px;
+    margin-top: 15px;
+    border: 2px solid black;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px black
+}
+
+.introduction-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+.square {
+    border: 2px solid black;
+    margin: 5px;
+    text-align: center;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FEB729;
+    color: #272727;
+
+    /* Create a transition in the square */
+    box-shadow: inset 0 0 0 0 #b87c04;
+    color: #272727;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.square:hover {
+    box-shadow: inset 165px 0 0 0 #996600;
+    color: white
+}
+
+.square-moba {
+    grid-column: 1/3;
+    grid-row: 8/9;
+}
+
+.square-shooters {
+    grid-column: 3/5;
+    grid-row: 8/9;
+}
+
+.square-role-playing-games {
+    grid-column: 5/7;
+    grid-row: 8/9;
+}
+
+.square-sandbox {
+    grid-column: 7/9;
+    grid-row: 8/9;
+}
+
+.square-sports {
+    grid-column: 9/11;
+    grid-row: 8/9;
+}
+
+.second-header {
+    grid-column: 3/9;
+    grid-row: 10/11;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.second-paragraph {
+    grid-column: 3/9;
+    grid-row: 12/13;
+    text-align: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    margin-top: 100px;
+    background-color: rgb(26, 26, 26);
+    padding: 10px 5px 0 5px;
+    /* text-align: center; */
+}
+
+.copy {
+    grid-column: 1/2;
+    text-align: left;
+}
+
+.siteplan {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.social {
+    grid-column: 5/6;
+    text-align: right;
+}
