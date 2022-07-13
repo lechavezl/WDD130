@@ -9,15 +9,24 @@
 </head>
 <body>
     <div id="content">
-        <header>
+        <header class="topnav">
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/logo_gamepro_3.jpg" alt="GamePro Logo">
             </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="esports.html">eSports</a>
-                <a href="staytuned.html">Stay Tuned</a>
-            </nav>
+            <div class="nav-a">
+                <nav>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="esports.html">eSports</a>
+                    <a href="staytuned.html">Stay Tuned</a>
+                </nav>
+            </div>
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </header>
         <div id="banner">
             <div id="banner-box">
