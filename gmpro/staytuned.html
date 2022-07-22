@@ -5,60 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Tuned</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div id="content">
-        <header>
+        <header class="topnav">
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/logo_gamepro_1.jpg" alt="GamePro Logo">
+                <img class="logo" src="images/logo_gamepro_3.jpg" alt="GamePro Logo">
             </a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="esports.html">eSports</a>
-                <a href="staytuned.html">Stay Tuned</a>
-            </nav>
+            <div class="nav-a">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="esports.html">eSports</a>
+                    <a class="active" href="staytuned.html">Stay Tuned</a>
+                </nav>
+            </div>
+            <div class="login-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" placeholder="Password" name="psw">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </header>
-        <main class="home-grid">
-            <h1 class="stay-tuned-header">Keep up to date with the latest information</h1>
-            <div class="text-and-image-1">
-                <p class="first-paragraph">How can you stay on top of the latest information? Let us tell you how, here at GamePro. But one thing you may be wondering is how will I know when they have new information? That's a great question, and we have the answer you need. If you want to, you can join our blog, so you'll receive an email notification every time we have a new update. This way, you will not miss critical information about the world of video games. Thus, you will be aware of everything you want to know about new releases, eSports, guides, tips and much more.</p>
-                <img class="stay-tuned-img-1" src="images/stay_tuned_1.jpg" alt="Person using his cellphone">
+        <main>
+            <div class="staytuned-grid">
+                <h1 class="staytuned-header">Keep up to date with the latest information</h1>
+                <p class="staytuned-first-paragraph">How can you stay on top of the latest information? Let us tell you how, here at GamePro. But one thing you may be wondering is how will I know when they have new information? That's a great question, and we have the answer you need. If you want to, you can join our blog, so you'll receive an email notification every time we have a new update. This way, you will not miss critical information about the world of video games. Thus, you will be aware of everything you want to know about new releases, eSports, guides, tips and much more.</p>
+                <img class="staytuned-img-1" src="images/stay_tuned_1.jpg" alt="Person using his cellphone">
+                <h2 class="staytuned-second-header">Let the world know that video games are a part of you</h2>
+                <p class="staytuned-second-paragraph">If you want to create your own blog to show the world that you are a true video game fan, we can help you. Be part of our blog, and you'll find the latest news, results, releases, and more impactful information to attract the masses to your website.</p>
+                <img class="staytuned-img-2" src="images/stay_tuned_2.jpg" alt="Boy playing virtual reality video games">
+                <h2 class="staytuned-third-header">Suscribe our blog</h2>
             </div>
-            <div class="text-and-img-2">
-                <h2 class="stay-tuned-second-header">Let the world know that video games are a part of you</h2>
-                <p class="second-paragraph">If you want to create your own blog to show the world that you are a true video game fan, we can help you. Be part of our blog, and you'll find the latest news, results, releases, and more impactful information to attract the masses to your website.</p>
-                <img class="stay-tuned-img-2" src="images/stay_tuned_2.jpg" alt="Boy playing virtual reality video games">
-            </div>
-            <h2>Suscribe our blog</h2>
             <div class="suscribe-box-grid">
-                <div id="feedback"></div>
-                <form action="/suscribe-to-gamepro" method="post">
+                <form class="staytuned-form" action="/suscribe-to-gamepro" method="post">
                     <ul>
                      <li>
-                       <label for="name">Fist Name:</label>
-                       <input type="text" id="first-name" name="user_name">
+                       <label for="first-name">First Name:</label>
+                       <input class="staytuned-input firstname-form" type="text" id="first-name" name="user_name">
                      </li>
                      <li>
                         <label for="last-name">Last Name:</label>
-                        <input type="text" id="last-name" name="user_last_name">
+                        <input class="staytuned-input lastname-form" type="text" id="last-name" name="user_last_name">
                       </li>
                      <li>
                        <label for="mail">Email Adress:</label>
-                       <input type="email" id="mail" name="user_email">
+                       <input class="staytuned-input" type="email" id="mail" name="user_email">
+                     </li>
+                     <li>
+                        <label for="username">Username:</label>
+                        <input class="staytuned-input" type="text" id="username" name="username">
+                     </li>
+                     <li>
+                        <label for="psw">Password:</label>
+                        <input class="staytuned-input" type="password" id="psw" name="psw">
                      </li>
                      <li>
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="user_phone"
+                        <input class="staytuned-input" type="tel" id="phone" name="user_phone"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             required>
-                        <small>Format: 123-456-7890</small>
+                            <small>Format: 123-456-7890</small>
                      </li>
                      <li>
-                        <input type="checkbox" id="notifications" name="user_agreedment">
+                        <input class="notifications" type="checkbox" id="notifications" name="user_agreedment">
                         <label for="notifications">Do you want to receive notifications when we have new posts?</label>
                      </li>
-                     <li class="button">
-                        <button type="submit">Suscribe Now</button>
+                     <li>
+                        <button class="staytuned-button" type="submit">Suscribe Now</button>
                       </li>
                     </ul>
                 </form>
