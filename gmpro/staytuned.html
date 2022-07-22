@@ -31,10 +31,10 @@
         <main>
             <div class="staytuned-grid">
                 <h1 class="staytuned-header">Keep up to date with the latest information</h1>
-                <p class="staytuned-first-paragraph">How can you stay on top of the latest information? Let us tell you how, here at GamePro. But one thing you may be wondering is how will I know when they have new information? That's a great question, and we have the answer you need. If you want to, you can join our blog, so you'll receive an email notification every time we have a new update. This way, you will not miss critical information about the world of video games. Thus, you will be aware of everything you want to know about new releases, eSports, guides, tips and much more.</p>
+                <p class="staytuned-first-paragraph">How can you keep up with the latest information? Let us tell you how, here at GamePro. But one thing you may be wondering is: how will I know when there's new information? That's a great question, and we have the answer you need. If you want, you can join our blog, so you'll receive an email notification every time we have a new update. Also, by creating your account you can participate by leaving comments on our posts. This way, you won't miss out on critical information about the world of video games. Thus, you will be aware of everything you want to know about new releases, eSports, guides, tips and much more.</p>
                 <img class="staytuned-img-1" src="images/stay_tuned_1.jpg" alt="Person using his cellphone">
                 <h2 class="staytuned-second-header">Let the world know that video games are a part of you</h2>
-                <p class="staytuned-second-paragraph">If you want to create your own blog to show the world that you are a true video game fan, we can help you. Be part of our blog, and you'll find the latest news, results, releases, and more impactful information to attract the masses to your website.</p>
+                <p class="staytuned-second-paragraph">If you want to create your own blog to show the world that you are a true video games fan, we can help you. Become a part of our blog and you will find the latest news, results, releases and, more shocking information right when they are published. This way, you will attract the masses to your website.</p>
                 <img class="staytuned-img-2" src="images/stay_tuned_2.jpg" alt="Boy playing virtual reality video games">
                 <h2 class="staytuned-third-header">Suscribe our blog</h2>
             </div>
@@ -95,22 +95,5 @@
             </div>
         </footer>
     </div>
-    <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for subscribing to our blog. We will let you know every time we have a new publication!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
 </body>
 </html>
